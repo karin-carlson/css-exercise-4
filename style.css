@@ -1,0 +1,74 @@
+body {
+  background-color: #dadada;
+  font-size: 10px;
+  width: 600px;
+}
+
+h1.Modern-luxury {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  position: initial;
+
+}
+
+h1 {
+ text-align: left;
+ padding: 55px;
+ text-align: center;
+ position: absolute;
+
+}
+
+div {
+ text-align: left;
+ font-size: 24px;
+ font-family: serif;
+ padding: 10px;
+ z-index: 2;
+}
+
+.container {
+  width: 600px;
+  background-color: #dadada;
+  padding: 50px;
+}
+
+.preview-baku {
+  background-image: url("baku.jpg");
+}
+
+.preview-london {
+  background-image: url("london.png");
+}
+
+.preview-madrid {
+  background-image: url("madrid.jpg");
+}
+
+.preview-rome {
+  background-image: url("rome.jpg")
+}
+/*for iphone*/
+@media only screen
+  and (min-device-width: 375px){
+    div {
+     grid-column: 1;
+   }
+}
+
+/*for ipad*/
+@media screen and (min-device-width: 768px){
+   div {
+    grid-column: 2;
+  }
+
+/*for laptop*/
+@media screen and (min-width: 991px){
+   div {
+    grid-column: 4;
+  }
+}
