@@ -38,11 +38,12 @@ div {
 }
 
 .preview-baku {
-  background-image: url("baku.jpg");
+  background-image: url(css/images/baku.jpg);
+
 }
 
 .preview-london {
-  background-image: url("london.png");
+  background-image: url(css-exercise-four/css/imges/london.png);
 }
 
 .preview-madrid {
