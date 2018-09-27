@@ -1,7 +1,6 @@
 body {
   background-color: #dadada;
   font-size: 10px;
-  width: 600px;
 }
 
 h1.Modern-luxury {
@@ -25,51 +24,64 @@ h1 {
 
 div {
  text-align: left;
- font-size: 24px;
+ font-size: 20px;
  font-family: serif;
  padding: 10px;
  z-index: 2;
+ width: 18%;
 }
 
 .container {
-  width: 600px;
+  width: 100%;
   background-color: #dadada;
   padding: 50px;
+  text-align: center;
 }
 
-.preview-baku {
-  background-image: url(css/images/baku.jpg);
+.preview {
+  background-size: cover;
+  padding: 10px;
+  height: 200px;
+  margin: 0px 20px 20px 0px;
+  background-position: center;
+  display: inline-block;
+  width: 20%;
 
 }
 
-.preview-london {
-  background-image: url(css-exercise-four/css/imges/london.png);
+.preview h1 {
+  padding: 24px;
 }
 
-.preview-madrid {
-  background-image: url("madrid.jpg");
+.baku {
+  background-image: url("images/baku.jpg");
 }
 
-.preview-rome {
-  background-image: url("rome.jpg")
+.london {
+  background-image: url("images/london.png");
 }
+
+.madrid {
+  background-image: url("images/madrid.jpg");
+}
+
+.rome {
+  background-image: url("images/rome.jpg")
+}
+
 /*for iphone*/
 @media only screen
-  and (min-device-width: 375px){
-    div {
-     grid-column: 1;
-   }
+  and (min-device-width : 320px) and  (max-device-width : 480px){
+    .preview {
+      width: 100%;
+      margin: 0px 0px 20px 0px;
+    }
+
 }
 
 /*for ipad*/
-@media screen and (min-device-width: 768px){
-   div {
-    grid-column: 2;
-  }
-
-/*for laptop*/
-@media screen and (min-width: 991px){
-   div {
-    grid-column: 4;
-  }
-}
+@media screen and (min-device-width: 768px max-device-width:1025){
+   .preview {
+      display: block;
+      padding: 100%;
+ }
